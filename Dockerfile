@@ -2,4 +2,4 @@ FROM logstash
 
 ADD logstash.conf /etc/logstash/conf.d/logstash.conf 
 
-CMD ["logstash", "-f", "/etc/logstash/conf.d/logstash.conf","--logstashworkers","4"]
+CMD ["logstash", "-f", "/etc/logstash/conf.d/logstash.conf","-w","4"]
