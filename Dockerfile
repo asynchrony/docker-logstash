@@ -1,4 +1,4 @@
-FROM logstash
+FROM logstash:2.4.0
 
 ADD logstash.conf /etc/logstash/conf.d/logstash.conf 
 
